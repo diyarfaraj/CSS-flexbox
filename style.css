@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    padding: 100px;
+    background: linear-gradient(to bottom right, green, blue);
+    height: 100vh;
+}
+
+.pizza__hero {
+    flex: 0 0 45%;
+}
+
+.pizza {
+    border: solid 1px red;
+    min-width: 850px;
+    border-radius: 4px;
+    box-shadow: 0 30px 80px 10px rgb(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.pizza__img {
+    width: 100%;
+}
+
+.pizza__content {
+    background: white;
+    flex: 1;
+}
+
+.pizza__price {
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, green, blue);
+
+
+}
