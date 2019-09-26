@@ -1,41 +1,78 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    color: #444;
-    font-family: 'Roboto', sans-serif;
-    padding: 100px;
-    background: linear-gradient(to bottom right, green, blue);
-    height: 100vh;
-}
-
-.pizza__hero {
-    flex: 0 0 45%;
+	color: #444;
+	font-family: 'Roboto', sans-serif;
+	padding: 50px;
+	background: linear-gradient(to bottom right, green, blue);
+	height: 100vh;
+	display: flex;
+	align-items: center; /* place item along the cross axis*/
+	justify-content: center; /* place item along the main  axis*/
 }
 
 .pizza {
-    border: solid 1px red;
-    min-width: 850px;
-    border-radius: 4px;
-    box-shadow: 0 30px 80px 10px rgb(0, 0, 0, 0.2);
-    display: flex;
+	border: solid 1px red;
+	min-width: 850px;
+	border-radius: 4px;
+	box-shadow: 0 30px 80px 10px rgb(0, 0, 0, 0.2);
+	display: flex;
+	align-items: stretch;
+	overflow: hidden;
 }
 
+.pizza__hero {
+	flex: 0 0 45%;
+}
 .pizza__img {
-    width: 100%;
+	width: 100%;
+	display: block;
 }
 
 .pizza__content {
-    background: white;
-    flex: 1;
+	background: white;
+	flex: 1;
+	padding: 35px 30px;
 }
 
 .pizza__price {
-    flex: 0 0 50px;
-    background: linear-gradient(to bottom, green, blue);
+	flex: 0 0 50px;
+	background: linear-gradient(to bottom, green, blue);
+	align-self: center;
+	color: aliceblue;
+	writing-mode: vertical-rl;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.pizza__title {
+	display: flex;
+	align-items: center;
+}
 
+.pizza__heading {
+	font-size: 20px;
+	margin-right: auto;
+	border: 1px solid;
+}
+
+.pizza__tag {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: aliceblue;
+	padding: 2px 5px;
+	border-radius: 100px;
+	margin-left: 7px;
+}
+
+.pizza__tag-1 {
+	background: blue;
+}
+.pizza__tag-2 {
+	background: green;
 }
