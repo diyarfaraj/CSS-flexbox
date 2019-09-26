@@ -8,7 +8,7 @@ body {
 	color: #444;
 	font-family: 'Roboto', sans-serif;
 	padding: 50px;
-	background: linear-gradient(to bottom right, green, blue);
+	background: linear-gradient(to bottom right, green, rgb(26, 26, 143));
 	height: 100vh;
 	display: flex;
 	align-items: center; /* place item along the cross axis*/
@@ -16,7 +16,6 @@ body {
 }
 
 .pizza {
-	border: solid 1px red;
 	min-width: 850px;
 	border-radius: 4px;
 	box-shadow: 0 30px 80px 10px rgb(0, 0, 0, 0.2);
@@ -37,12 +36,15 @@ body {
 	background: white;
 	flex: 1;
 	padding: 35px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 
 .pizza__price {
 	flex: 0 0 50px;
-	background: linear-gradient(to bottom, green, blue);
-	align-self: center;
+	background: linear-gradient(to bottom, rgb(26, 26, 143), green);
+
 	color: aliceblue;
 	writing-mode: vertical-rl;
 	display: flex;
@@ -53,12 +55,12 @@ body {
 .pizza__title {
 	display: flex;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
 .pizza__heading {
 	font-size: 20px;
 	margin-right: auto;
-	border: 1px solid;
 }
 
 .pizza__tag {
@@ -71,8 +73,34 @@ body {
 }
 
 .pizza__tag-1 {
-	background: blue;
+	background: rgb(26, 26, 143);
 }
 .pizza__tag-2 {
 	background: green;
+}
+
+.pizza__description {
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: 5px;
+}
+
+.pizza__details {
+	display: flex;
+	justify-content: space-between;
+	margin-top: auto;
+}
+
+.pizza__detail {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-right: 20px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+}
+
+.emoji {
+	font-size: 20px;
+	margin-right: 3px;
 }
